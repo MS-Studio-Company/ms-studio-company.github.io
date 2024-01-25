@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>MS Studio</title>
+</head>
+<body>
+    <img id="bg"
+    src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    alt="Background image">
+    <header id="top">
+        <left>
+            <img onclick="window.location.href = 'index.html'" src="media/logo-wide.png" id="logo" alt="MS Studio logo">
+            <div class="header-btn">
+                <button onclick="
+                    if (document.querySelector('#gamesList').style.display == 'flex') {
+                        document.querySelector('#gamesList').style.display = 'none';
+                    } else {
+                        document.querySelector('#gamesList').style.display = 'flex';
+                        document.querySelector('#projectsList').style.display = 'none';
+                        document.querySelector('#pluginsList').style.display = 'none';
+                    }
+                " id="games">Gry <span>--</span> <img id="arrow" src="media/languages/arrow.png"></button>
+                <div id="gamesList" class="drop">
+                    <button>Brawl Box Opener</button>
+                    <button>Gra 2</button>
+                </div>
+            </div>
+            <div class="header-btn">
+                <button onclick="
+                    if (document.querySelector('#pluginsList').style.display == 'flex') {
+                        document.querySelector('#pluginsList').style.display = 'none';
+                    } else {
+                        document.querySelector('#gamesList').style.display = 'none';
+                        document.querySelector('#projectsList').style.display = 'none';
+                        document.querySelector('#pluginsList').style.display = 'flex';
+                    }
+                " id="plugins">Pluginy <span>--</span> <img id="arrow" src="media/languages/arrow.png"></button>
+                <div id="pluginsList" class="drop">
+                    <button>Nazwa pluginu 1</button>
+                    <button>Plugin 2</button>
+                </div>
+            </div>
+            <div class="header-btn">
+                <button onclick="
+                    if (document.querySelector('#projectsList').style.display == 'flex') {
+                        document.querySelector('#projectsList').style.display = 'none';
+                    } else {
+                        document.querySelector('#gamesList').style.display = 'none';
+                        document.querySelector('#projectsList').style.display = 'flex';
+                        document.querySelector('#pluginsList').style.display = 'none';
+                    }
+                " id="projects">Projekty <span>--</span> <img id="arrow" src="media/languages/arrow.png"></button>
+                <div id="projectsList" class="drop">
+                    <button>Projekt 1</button>
+                    <button>Nazwa projektu 2</button>
+                </div>
+            </div>
+        </left>
+        <right>
+            <div id="socials">
+                <button><img onclick="window.location.href = 'https://discord.gg/czC68Frj'" src="media/socials/discord.png" alt="Discord"></button>
+                <button><img onclick="window.location.href = 'https://www.youtube.com/channel/UCUyTm5e4EU-1APpGTdzZA5Q'" src="media/socials/youtube.png" alt="Youtube"></button>
+                <button><img onclick="window.location.href = 'https://www.instagram.com/msstudiocompanyig/'" src="media/socials/instagram.png" alt="Instagram"></button>
+                <button><img onclick="window.location.href = 'https://www.tiktok.com/@msstudiocompany'" src="media/socials/tiktok.png" alt="TikTok"></button>
+            </div>
+            <div class="header-btn">
+                <button onclick="
+                    if (document.querySelector('#languageList').style.display == 'flex') {
+                        document.querySelector('#languageList').style.display = 'none';
+                    } else {
+                        document.querySelector('#languageList').style.display = 'flex';
+                    }
+                " id="language"><img id="currentLanguage" src="media/languages/pl.png" alt="Polish"><img id="arrow" src="media/languages/arrow.png"></button>
+                <div id="languageList" class="drop">
+                    <button id="pl" onclick="window.location.href = 'index.html'"><img src="media/languages/pl.png" alt="Polish"></button>
+                    <button id="en" onclick="window.location.href = 'index_en.html'"><img src="media/languages/en.png" alt="English"></button>
+                </div>
+            </div>
+        </right>
+    </header>
+    <main>
+        <div id="intro-banner">
+            <h1>JESTEŚMY MS STUDIO</h1>
+            <p>
+                MS Studio to rozwijająca się firma, obecnie tworząca gry komputerowe.<br>W przyszłości będziemy dążyć do rozszerzenia pakietu naszych produktów,
+                tak, aby uczynić twój czas przed ekranem ciekawszym i bardziej inspirującym.
+            </p>
+        </div>
+
+        <div id="projects-banner">
+            <h1>NASZE PROJEKTY</h1>
+            <div id="projects-list">
+                <button>
+                    <h1>Brawl Box Opener</h1>
+                    <p>
+                        Nasza pierwsza gra, sprawdź ją!
+                    </p>
+                </button>
+                <button>
+                    <h1>Brawl Box Opener</h1>
+                    <p>
+                        Nasza pierwsza gra, sprawdź ją!
+                    </p>
+                </button>
+                <button>
+                    <h1>Brawl Box Opener</h1>
+                    <p>
+                        Nasza pierwsza gra, sprawdź ją!
+                    </p>
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="media/logo-black.png" alt="MS Studio logo" onclick="window.location.href = '#top'">
+        <div>
+            <h1>GRY</h1>
+            <p>
+                <a href="https://google.pl">Link</a><br>
+                <a href="https://google.pl">Link</a><br>
+                <a href="https://google.pl">Link</a><br>
+                <a href="https://google.pl">Link</a>
+            </p>
+        </div>
+        <div>
+            <h1>PLUGINY</h1>
+            <p>
+                <a href="https://google.pl">Link</a><br>
+                <a href="https://google.pl">Link</a><br>
+                <a href="https://google.pl">Link</a><br>
+                <a href="https://google.pl">Link</a>
+            </p>
+        </div>
+        <div>
+            <h1>KONTAKT</h1>
+            <p>
+                <a href="https://google.pl">Link</a><br>
+                <a href="https://google.pl">Link</a><br>
+                <a href="https://google.pl">Link</a><br>
+                <a href="https://google.pl">Link</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

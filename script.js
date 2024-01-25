@@ -1,0 +1,9 @@
+const games = [document.querySelector("#"), "Gry", "Games"];
+const plugins = ["Pluginy, Plugins"];
+const projekty = ["Projekty", "Projects"];
+const contact = ["Kontakt", "Contact"];
+const bannerHeader = ["Jesteśmy MS Studio", "We are MS Studio"];
+const bannerDesc = ["MS Studio to rozwijająca się firma, obecnie tworząca gry komputerowe.<br>W przyszłości będziemy dążyć do rozszerzenia pakietu naszych produktów, tak, aby uczynić twój czas przed ekranem ciekawszym i bardziej inspirującym.", "MS Studio is an evolving company, currently producing various video games. We are planning to expand the variety of our products in the future, making your screen time even more fun and engaging."];
+const projectsHeader = ["Nasze projekty", "Our projects"];
+const btnPl = document.querySelector("#pl");
+const btnEn = document.querySelector("#en");

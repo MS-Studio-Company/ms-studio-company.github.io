@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@600&display=swap');
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+#bg {
+    max-width: 100%;
+    height: auto;
+    z-index: -1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+header {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px rgb(0, 0, 0) solid;
+    height: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+#logo {
+    transition: all 0.15s;
+}
+#logo:active {
+    transform: scale(0.95);
+}
+left {
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+right {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    width: 50%;
+}
+left > img {
+    height: 100px;
+    width: auto;
+}
+button {
+    background-color: rgb(255, 255, 255);
+    transition: all 0.12s;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: rgb(230, 230, 230);
+}
+button:active {
+    transform: scale(0.97);
+}
+button > span {
+    color: rgba(0, 0, 0, 0);
+    width: 20px;
+}
+.header-btn {
+    margin-right: 5px;
+}
+.header-btn > button {
+    width: calc(100% - 8px);
+    height: calc(100% - 16px);
+    margin: 8px 4px;
+    padding: 20px;
+    min-width: 150px;
+}
+.drop {
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+}
+.drop > button {
+    margin: 0;
+    padding: 15px;
+    min-width: 100px;
+    max-width: 145px;
+}
+#gamesList {
+    display: none;
+    position: relative;
+    top: 10px;
+    flex-flow: column nowrap;
+    border: 1px rgb(0, 0, 0) solid;
+}
+#pluginsList {
+    display: none;
+    position: relative;
+    top: 10px;
+    flex-flow: column nowrap;
+    border: 1px rgb(0, 0, 0) solid;
+}
+#projectsList {
+    display: none;
+    position: relative;
+    top: 10px;
+    flex-flow: column nowrap;
+    border: 1px rgb(0, 0, 0) solid;
+}
+#languageList {
+    display: none;
+    position: relative;
+    top: 10px;
+    flex-flow: column nowrap;
+    border: 1px rgb(0, 0, 0) solid;
+    width: 60px;
+}
+#languageList > button {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    user-select: none;
+}
+#languageList > button > img {
+    width: 60px;
+    height: 60px;
+}
+#language {
+    min-width: 50px;
+    width: 84px;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#language > img {
+    width: 60px;
+    height: 60px;
+}
+#currentLanguage {
+    width: 50px;
+    height: 50px;
+}
+#language > #arrow {
+    width: 20px;
+    height: 20px;
+}
+#arrow {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+}
+
+
+
+#intro-banner {
+    width: 80%;
+    min-height: 300px;
+    background-size: 200%;
+    background-position: 10% 50%;
+    margin: 0;
+    padding: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+#intro-banner > h1 {
+    margin: 30px;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', sans-serif;
+}
+#intro-banner > p {
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 28px;
+    margin: 30px;
+    margin-top: 0;
+    font-size: 22px;
+    max-width: 900px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+#projects-banner {
+    width: calc(100% - 100px);
+    min-height: 300px;
+    background-size: 200%;
+    background-position: 10% 50%;
+    margin: 0;
+    padding: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: end;
+}
+#projects-banner > h1 {
+    margin: 30px;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: end;
+}
+#projects-banner > p {
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 28px;
+    margin: 30px;
+    margin-top: 0;
+    font-size: 22px;
+    max-width: 900px;
+    color: rgb(0, 0, 0);
+    text-align: end;
+}
+#projects-list {
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+#projects-list > button {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(200, 200, 200);
+    transition: all 0.15s;
+    margin-left: 10px;
+}
+#projects-list > button:hover {
+    transform: translate(5px, 5px) scale(1.05, 1.05);
+    background-color: rgb(220, 220, 220);
+}
+#projects-list > button:active {
+    transform: translate(0, 0) scale(0.98, 0.98);
+}
+#projects-list > button > h1 {
+    margin: 10px 30px;
+    font-size: 48px;
+    color: rgb(0, 0, 0);
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: end;
+}
+#projects-list > button > p {
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 28px;
+    margin: 30px;
+    margin-top: 0;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    text-align: end;
+}
+
+
+
+
+
+#socials {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 5px;
+}
+#socials > button {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    user-select: none;
+}
+#socials > button > img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+footer {
+    height: 250px;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    border: 5px rgb(0, 0, 0) solid;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    color: rgb(255, 255, 255);
+
+}
+footer > img {
+    height: 200px;
+    width: auto;
+    margin: 0;
+    margin-right: 30px;
+    transition: all 0.15s;
+    cursor: crosshair;
+}
+footer > img:active {
+    transform: scale(0.95);
+}
+footer > div {
+    margin: 0 30px;
+}
+footer > div > h1 {
+    font-size: 28px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+}
+footer > div > p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+}
+footer > div > p > a {
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    transition: all 0.15s;
+}
+footer > div > p > a:hover {
+    color: rgb(255, 255, 255);
+}

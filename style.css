@@ -121,17 +121,22 @@ footer > .f-right > .f-links > p > a {
 }
 .right > button {
     height: 50px;
-    min-width: 120px;
+    min-width: 100px;
+    padding: 0 10px;
     font-size: 18px;
     background-color: rgb(240, 240, 240);
     color: rgb(0, 0, 0);
-    font-family: 'regular', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     border: 0;
     border-radius: 8px;
     margin-right: 5px;
     position: relative;
     top: 1px;
     transition: all 0.15s;
+}
+.right > .featured {
+    background-color: rgb(100, 0, 0);
+    color: rgb(255, 255, 255);
 }
 .right > button:hover {
     position: relative;
@@ -270,10 +275,14 @@ a:hover {
     h1, h2, h3, p {
         color: rgb(255, 255, 255);
     }
+    .touch-menu > .featured, .right > .featured {
+        background-color: rgb(100, 0, 0);
+        color: rgb(255, 255, 255);
+    }
 }
 
 @media (max-width: 900px) {
-    .right > button {
+    .right > button, .right > .social-buttons {
         display: none;
     }
     .right > img {

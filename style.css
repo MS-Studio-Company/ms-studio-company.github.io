@@ -291,6 +291,7 @@ a:hover {
     }
     h1, h2, h3, p, a {
         color: rgb(255, 255, 255);
+        text-decoration-color: rgb(255, 255, 255);
     }
     .touch-menu > .featured, .right > .featured {
         background-color: rgb(150, 30, 30);

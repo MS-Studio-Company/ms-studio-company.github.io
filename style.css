@@ -224,7 +224,7 @@ a:hover {
 .touch-menu {
     position: absolute;
     margin: -15px 0 8px 0;
-    top: -280px;
+    top: -350px;
     left: 0px;
     height: auto;
     width: 100%;
@@ -263,7 +263,7 @@ a:hover {
 }
 .hide-menu {
     animation: hideMenu 0.5s ease-in;
-    top: -280px;
+    top: -350px;
 }
 .touch-menu > .featured, .right > .featured {
     background-color: rgb(150, 30, 30);
@@ -272,6 +272,65 @@ a:hover {
 .touch-menu > .featured:hover, .right > .featured:hover {
     background-color: rgb(100, 20, 20);
     color: rgb(255, 255, 255);
+}
+.games-menu, .plugins-menu, .languages-menu {
+    position: relative;
+    top: 2.5px;
+    transition: all 0.3s;
+}
+.games-menu > button, .plugins-menu > button, .languages-menu > button {
+    height: 50px;
+    min-width: 100px;
+    width: 175px;
+    padding: 0 10px;
+    font-size: 18px;
+    background-color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto Condensed', sans-serif;
+    border: 0;
+    border-radius: 8px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    top: 1px;
+    transition: all 0.15s;
+    display: none;
+}
+.games-menu:hover, .plugins-menu:hover, .languages-menu:hover {
+    top: 30px;
+}
+.languages-menu:hover {
+    top: 60px;
+}
+.games-menu > .main, .plugins-menu > .main, .languages-menu > .main {
+    display: block;
+}
+.games-menu > button:hover, .plugins-menu > button:hover, .languages-menu > button:hover {
+    background-color: rgb(225, 225, 225);
+}
+.games-menu:hover > button, .plugins-menu:hover > button, .languages-menu:hover > button {
+    display: block;
+}
+.games-menu:hover > .main, .plugins-menu:hover > .main, .languages-menu:hover > .main {
+    display: none;
+}
+.languages-menu > button {
+    width: 50px;
+    min-width: 50px;
+    padding: 0;
+}
+.languages-menu > button > img {
+    width: 50px;
+    height: 50px;
+}
+@media (prefers-color-scheme: dark) {
+    .games-menu > button, .plugins-menu > button, .languages-menu > button {
+        background-color: rgb(40, 40, 40);
+        color: rgb(255, 255, 255);
+    }
+    .games-menu > button:hover, .plugins-menu > button:hover, .languages-menu > button:hover {
+        background-color: rgb(60, 60, 60);
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -300,7 +359,7 @@ a:hover {
 }
 
 @media (max-width: 900px) {
-    .right > button, .right > .social-buttons, .games-menu, .plugins-menu {
+    .right > button, .right > .social-buttons, .games-menu, .plugins-menu, .languages-menu {
         display: none;
     }
     .right > img {
